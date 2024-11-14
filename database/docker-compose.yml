@@ -15,5 +15,4 @@ services:
     volumes:
       - ${PWD}/mariadb:/var/lib/mysql
       - ./init.sql:/data/application/init.sql
-
     # network_mode: "host"
