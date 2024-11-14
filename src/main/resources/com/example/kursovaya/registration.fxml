@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaya.RegistrationController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backBtn" layoutX="61.0" layoutY="548.0" mnemonicParsing="false" onAction="#backButton" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="&lt;">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </left>
+   <top>
+      <Label text="Регистрация" textFill="#ffc800" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nameFIeld" layoutX="214.0" layoutY="78.0" promptText="Имя" />
+            <Label layoutX="264.0" layoutY="14.0" text="Имя" textFill="#ffc800">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="237.0" layoutY="130.0" text="Фамилия" textFill="#ffc800">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="271.0" text="Код сотрудника" textFill="#ffc800">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="familyField" layoutX="214.0" layoutY="200.0" promptText="Фамилия" />
+            <TextField fx:id="codeField" layoutX="214.0" layoutY="331.0" promptText="Код" />
+            <Button fx:id="regBtn" layoutX="195.0" layoutY="550.0" mnemonicParsing="false" onAction="#regButton" prefHeight="51.0" prefWidth="187.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="Регистрация">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="119.0" fitWidth="121.0" layoutX="607.0" layoutY="270.0">
+               <image>
+                  <Image url="@../../../files/unlocked.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="119.0" fitWidth="121.0" layoutX="-60.0" layoutY="271.0">
+               <image>
+                  <Image url="@../../../files/unlocked.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="261.0" layoutY="389.0" text="Роль" textFill="#ffc800">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="rolesCombo" layoutX="215.0" layoutY="436.0" prefWidth="150.0" promptText="Роли" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

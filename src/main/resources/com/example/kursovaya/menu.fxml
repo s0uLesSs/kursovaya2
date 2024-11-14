@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursovaya.MenuController">
+   <children>
+      <Label layoutX="444.0" layoutY="34.0" text="МЕНЮ" textFill="#ffc800">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToMenuBtn" layoutX="15.0" layoutY="618.0" mnemonicParsing="false" onAction="#backToMenuBtn" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="&lt;">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="homeImg" fitHeight="49.0" fitWidth="65.0" layoutX="913.0" layoutY="36.0" onMouseClicked="#homeImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../files/home(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="barBtn" layoutX="172.0" layoutY="273.0" mnemonicParsing="false" onAction="#nextPageBtn" prefHeight="110.0" prefWidth="171.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="БАР">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="kitchenBtn" layoutX="699.0" layoutY="273.0" mnemonicParsing="false" onAction="#nextPageBtn" prefHeight="110.0" prefWidth="171.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="КУХНЯ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="businessBtn" layoutX="384.0" layoutY="448.0" mnemonicParsing="false" onAction="#businessBtn" prefHeight="117.0" prefWidth="232.0" style="-fx-background-color: #ffc800; -fx-background-radius: 20;" text="БИЗНЕС-ЛАНЧ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="93.0" layoutY="48.0" prefHeight="24.0" prefWidth="64.0" text="СТОЛ:" textFill="#ffc800">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="tableNumber" layoutX="194.0" layoutY="49.0" prefHeight="24.0" prefWidth="64.0" textFill="#ffc800">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
